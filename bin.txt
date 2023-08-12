@@ -1,0 +1,7 @@
+<form action="https://www.google.com/search" method="GET" target="_blank"
+                        class="relative flex z-50 bg-gray-900 rounded-full">
+                        <input type="text" name="q" placeholder="search here"
+                            class="rounded-full bg-gray-900 flex-1 px-6 py-4 text-gray-700 focus:outline-none">
+                        <button type="submit"
+                            class="bg-indigo-500 text-white rounded-full font-semibold px-8 py-4 hover:bg-indigo-400 focus:bg-indigo-600 focus:outline-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>

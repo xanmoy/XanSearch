@@ -22,13 +22,27 @@
         <div class=" bg-gray-900 flex flex-col justify-center" style="min-height: 50vh;">
             <div class="relative pl-12 pr-12 pb-12 w-full sm:max-w-2xl sm:mx-auto">
                 <div class="overflow-hidden z-0 rounded-full relative p-3">
+
                     <form action="https://www.google.com/search" method="GET" target="_blank"
                         class="relative flex z-50 bg-gray-900 rounded-full">
-                        <input type="text" name="q" placeholder="search here"
-                            class="rounded-full bg-gray-900 flex-1 px-6 py-4 text-gray-700 focus:outline-none">
-                        <button type="submit"
-                            class="bg-indigo-500 text-white rounded-full font-semibold px-8 py-4 hover:bg-indigo-400 focus:bg-indigo-600 focus:outline-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <label for="default-search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+                        <div class="">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search" name="q"
+                                class=" rounded-full bg-gray-900 flex-1 px-6 py-4 text-gray-700 w-full p-4 pl-10 text-sm"
+                                placeholder="Search here" required>
+                            <button type="submit"
+                                class="bg-indigo-500 text-white rounded-full font-semibold hover:bg-indigo-400 focus:bg-indigo-600 focus:outline-none absolute right-2.5 bottom-2.5 focus:ring-4 focus:ring-blue-300 text-sm px-4 py-2">Search</button>
+                        </div>
                     </form>
+
                     <div class="glow glow-1 z-10 bg-red-400 absolute"></div>
                     <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
                     <div class="glow glow-3 z-30 bg-red-400 absolute"></div>
